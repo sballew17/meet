@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class NumberOfEvents extends Component {
     state = {
-        numberOfEvents: 10,
+        numberOfEvents: 32,
         errorText: '',
     }
 
@@ -11,12 +11,12 @@ class NumberOfEvents extends Component {
         const value = event.target.value;
         if (value < 1) {
             return this.setState({
-                errorText: 'Please choose a number between 1 and 10',
+                errorText: 'Please choose a number between 1 and 32',
                 numberOfEvents: ''
             });
-        } else if (value > 10) {
+        } else if (value > 32) {
             return this.setState({
-                errorText: 'Please choose a number between 1 and 10',
+                errorText: 'Please choose a number between 1 and 32',
                 numberOfEvents: ''
             });
         } else {
