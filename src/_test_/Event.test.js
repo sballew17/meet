@@ -70,3 +70,5 @@ describe('<Event /> component', () => {
     })
 
 })
+
+export default Event;
