@@ -74,7 +74,7 @@ const getEvents = async () => {
         NProgress.done();
         return result.data.events;
     }
-}; 23
+};
 
 const removeQuery = () => {
     if (window.history.pushState && window.location.pathname) {
