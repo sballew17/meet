@@ -68,10 +68,10 @@ module.exports.getAccessToken = async (event) => {
     });
 };
 
-module.exports.getCalendarEvents = async (events) => {
+module.exports.getCalendarEvents = async (event) => {
   const oAuth2Client = new OAuth2(client_id, client_secret, redirect_uris[0]);
   const access_token = decodeURIComponent(
-    `${events.pathParameters.access_token}`,
+    `${event.pathParameters.access_token}`,
   );
   oAuth2Client.setCredentials({ access_token });
 
