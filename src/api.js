@@ -87,8 +87,8 @@ export const getEvents = async () => {
     }
 };
 
-export const extractLocations = (event) => {
-    var extractLocations = event.map((event) => event.location);
+export const extractLocations = (events) => {
+    var extractLocations = events.map((event) => event.location);
     var locations = [...new Set(extractLocations)];
     return locations;
 };
