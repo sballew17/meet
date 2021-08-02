@@ -7,3 +7,4 @@ jspm_packages
 
 # environment variable
 config.json
+node_modules
