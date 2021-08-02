@@ -17,7 +17,7 @@ class App extends Component {
     getEvents().then((events) => {
       const locationEvents = (location === 'all') ?
         events :
-        events.filter((event) => event.location === location);
+        events.filter((event) => event.locations === location);
       this.setState({
         events: locationEvents
       });
