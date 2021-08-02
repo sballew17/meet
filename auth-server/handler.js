@@ -68,7 +68,7 @@ module.exports.getAccessToken = async (event) => {
 };
 
 module.exports.getCalendarEvents = async (events) => {
-  const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, redirect_uris[0]);
+  const oAuth2Client = new OAuth2(client_id, client_secret, redirect_uris[0]);
   const access_token = decodeURIComponent(
     `${events.pathParameters.access_token}`,
   );
@@ -96,7 +96,7 @@ module.exports.getCalendarEvents = async (events) => {
       return {
         statusCode: 200,
         headers: {
-          "Access-Control-Allow-Origin": "*"
+          'Access-Control-Allow-Origin': '*'
         },
         body: JSON.stringify({ events: results.data.items }),
       };
