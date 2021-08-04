@@ -62,7 +62,7 @@ class App extends Component {
         <h4>Events in each city</h4>
         <EventGenre events={events} />
         <ResponsiveContainer height={400}>
-          <ScatterChart width={800} height={250}
+          <ScatterChart width={950} height={250}
             margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="category" dataKey="city" name="city" />
